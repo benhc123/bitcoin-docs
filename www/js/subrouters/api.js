@@ -17,7 +17,7 @@ define( ['plugins/backbone/backbone.subroute'],
 					module = 'api/' + module;
 				}
                 
-                UTIL.changeNavbar( 'api' );
+                UTIL.renderNavbar();
 				UTIL.changeMainContent( module );
 			}
 		});	

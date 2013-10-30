@@ -10,14 +10,14 @@ define( ['plugins/backbone/backbone.subroute'],
 				'*actions':	'runModule'
 			},
 			emptyRoute: function(){
-				this.runModule( 'home');
+				this.runModule( 'tutorials');
 			},
 			runModule: function( module ){
-				if( module !== 'home' ){
-					module = 'home/' + module;
+				if( module !== 'tutorials' ){
+					module = 'tutorials/' + module;
 				}
                 
-                UTIL.changeNavbar( 'home' );
+                UTIL.renderNavbar();
 				UTIL.changeMainContent( module );
 			}
 		});	
